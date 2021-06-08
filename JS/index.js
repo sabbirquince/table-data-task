@@ -17,7 +17,7 @@ const showInTable = () => {
         <td>${eachSet.status}</td>
         <td>${eachSet.role}</td>
         <td>${eachSet.lastLogin}</td>
-        <td><button class="btn-delete btn-danger">Delete</button> 
+        <td><button onclick=deleteUser("${eachSet.id}") class="btn-delete btn-danger">Delete</button> 
             <button onclick=editUser("${eachSet.id}") class="btn-edit btn-info">Edit</button>
         </td>
       </tr>
@@ -104,6 +104,14 @@ addUserBtn.addEventListener("click", () => {
   popupClose(addUserPopup);
   showInTable();
 });
+
+//////////////////// DELETE USER FROM TABLE ///////////////////
+const deleteUser = (id) => {
+  const newTableData = fakeTableData.filter((user) => user.id !== id);
+
+  fakeTableData = [...newTableData];
+  showInTable();
+};
 
 // VARIABLE USED IN POPUP SHOW & CLOSE
 const addUserButton = document.querySelector(".my-addUser-btn");
