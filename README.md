@@ -4,7 +4,7 @@
 
 ### Features:
 
-#### 1. User can click on edit button and the user row's info will show in a popup form.
+#### 1. User can click on edit button and the user row's info will show up in a popup form.
 
 #### 2. Popup can be opened and closed by their respective button.
 
