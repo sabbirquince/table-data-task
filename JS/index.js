@@ -54,10 +54,10 @@ const editedFormSubmit = (e) => {
   e.preventDefault();
   const id = e.target.id.value;
 
-  const editedUser = fakeTableData.filter((user) => user.id === id)[0];
+  const editUser = fakeTableData.filter((user) => user.id === id)[0];
 
   const pushUser = {
-    ...editedUser,
+    ...editUser,
     name: e.target.name.value,
     email: e.target.email.value,
     phone: e.target.phone.value,
@@ -65,8 +65,8 @@ const editedFormSubmit = (e) => {
   };
 
   fakeTableData.splice(id - 1, 1, pushUser);
-  popupClose(editUserPopup);
   showInTable();
+  popupClose(editUserPopup);
 };
 
 const editForm = document.getElementById("editForm");
@@ -79,6 +79,9 @@ editUserClosePopup.addEventListener("click", (event) => {
   event.preventDefault();
   popupClose(editUserPopup);
 });
+
+////////////// EXTRA FEATURES ///////////////////
+/////////////// FROM HERE ///////////////////////
 
 //////////////////// ADDING USER TO THE TABLE LIST //////////////////////////
 const addUserBtn = document.querySelector(".add-user-btn");
