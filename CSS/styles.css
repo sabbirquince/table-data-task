@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* min-height: 60vh; */
+    /* padding: 2rem 0; */
+}
+
+.my-table-container {
+    filter: blur(5px);
+}
+
+/* .my-popup {
+    position: relative;
+} */
+
+.my-table {
+    background-color: #ddffff;
+}
+
+.popup-show {
+    background-color: #f2ffff;
+    border-radius: 5px;
+    padding: 2.5rem;
+    width: 40%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: all .25s;
+    visibility: visible;
+}
+
+.popup-hidden {
+    position: absolute;
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(.55);
+}
+
+.my-popupClose-btn,
+.editUser-close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-delete,
+.btn-edit {
+    border: none;
+    outline: none;
+    font-size: .65rem;
+    padding: .35rem;
+    border-radius: 2.5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .20);
+}
