@@ -1,6 +1,6 @@
 ## Table Data Task
 
-## Design done by bootstrap, functionality done by vanilla js.
+### Design done by bootstrap, functionality done by vanilla js.
 
 ### Features:
 
