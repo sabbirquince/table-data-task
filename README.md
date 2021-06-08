@@ -12,7 +12,7 @@
 
 #### 5. (Extra) User can delete any user's row by clicking on respective delete button on table row.
 
-### How to run the code
+## How to run the code
 
 #### This code is hosted on github pages.
 
