@@ -1,5 +1,7 @@
 ## Table Data Task
 
+## Design done by bootstrap, functionality done by vanilla js.
+
 ### Features:
 
 #### 1. User can click on edit button and the user row's info will show in a popup form.
